@@ -1,0 +1,9 @@
+<div>
+  <form (ngSubmit)="login()" [formGroup]="loginForm">
+    <input formControlName="id" type="text" class="form-control" placeholder="Enter your Id" /><br/>
+    <input formControlName="password" type="password" class="form-control" placeholder="Enter your password" /><br/>
+    <br/><br/>
+    <button [disabled]="loginForm.invalid">Log In</button>
+    <button (click)="signup()">Sign Up</button>
+  </form>
+</div>
