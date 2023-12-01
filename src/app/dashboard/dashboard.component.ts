@@ -21,6 +21,7 @@ export class DashboardComponent {
   logout() {
     localStorage.removeItem('token')
     this.router.navigate(['login'])
+    window.location.reload()
   }
 
   addItemToParent(newValue: string): void {
